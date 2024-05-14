@@ -46,6 +46,8 @@ History commands:
 - ```C-r``` reverse search, enter a search pattern, you can use the command as-is or move the cursor to make changes
 - ```C-p``` previous command
 - ```C-n``` next command
+- ```M-<``` move to first command in history
+- ```M->``` move to last command in history
 
 Undo:
 - ```C-_``` or ```C-x C-u``` undoes the last edit, especially kill commands (e.g. delete word with ```M-d```) this supposedly can be repeated until there is a blank line left. my results have been mixed.
