@@ -69,7 +69,7 @@ How is this editor identified?
 ## Systemd
 
 ### Services
-Edit a aervice file ```systemctl edit <service name>```
+Edit a service file ```systemctl edit <service name>```
 
 ### Timers
 To get a list of active timers: `systemctl list-timers`
