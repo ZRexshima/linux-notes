@@ -64,6 +64,7 @@ To edit a command in editor: ```^xe```
 
 How is this editor identified?
 
+C-\ sends SIGKILL
 
 ## Systemd
 
