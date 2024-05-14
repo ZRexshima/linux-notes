@@ -19,7 +19,7 @@ Any software that is provided by GNU will probably also have a more comprehensiv
 ### Bash and readline:
 For help on bash, see ```man bash``` or ```info bash```.
 
-By default, the bash shell is in emacs-mode exposing some emacs key bindings for line editing. This behavior can be switched to enable vi style key bindings if preferred. For more info, see ```info bash``` section 8. Using emacs lingo, ```C-x``` is holding down the Ctrl key and pressing x, and ```M-x``` is holding down the Meta key (which is usually labelled Alt) and pressing x.
+By default, the bash shell is in emacs-mode exposing some emacs key bindings for line editing. This behavior can be switched to enable vi style key bindings if preferred. For more info, see ```info bash``` section 8. Using emacs lingo, ```C-x``` is holding down the Ctrl key and pressing x, and ```M-x``` is holding down the Meta* key and pressing x. The Meta key is usually labelled ```Alt```, but can also be used by pressing and releasing ```Escape```. Sometimes ```Alt``` is not functioning correctly due to the terminal emulator. Yank means paste. Kill means cut.
 
 Move command bindings:
 - ```C-a``` move cursor to beginning of line
@@ -37,6 +37,7 @@ Kill and yank command bindings:
 - ```C-k``` kill (delete) all text from the point (cursor) to the end of the line
 - ```C-w``` kill from cursor to previous whitespace
 - ```C-y``` yank the previosly killed text to cursor point
+- ```M-y``` rotate the kill ring and yank the new top, only if previous command was ```C-y``` or ```M-y```
 
 History commands:
 - ```C-r``` reverse search, enter a search pattern, you can use the command as-is or move the cursor to make changes
@@ -49,6 +50,9 @@ Undo:
 
 More:
 - ```C-l``` clear the terminal screen, same as typing clear
+
+Modifier:
+- You can use ```M-<numerical argument>``` to alter the above commands. For example, to delete 3 characters from the cursor, ```M-3 C-d```. This can be more than one digit or even a negative number can be passed as an argument by doing ```M-- <number> <command>```.
 
 
 To edit a command in editor: ```^xe```
