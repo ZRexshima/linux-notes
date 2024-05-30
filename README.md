@@ -16,10 +16,10 @@ First, manual pages should be available for anything on a system. If you develop
 Any software that is provided by GNU will probably also have a more comprehensive manual. You can access this by running ```info <command>```. The topics are arranged in a directory so if you want to browse to see what is available, ```info``` will get you to the top of the directory. Pressing ```d``` in any info topic will jump to the directory as well. If you ask info for a command that does not have an info topic, it will serve the man page instead.
 
 
-### Bash and readline:
+## Bash and readline:
 For help on bash, see ```man bash``` or ```info bash```.
 
-By default, the bash shell is in emacs-mode exposing some emacs key bindings for line editing. These bindings can be extended by creating and modifying a user's readline init file. Alternatively, this behavior can be switched to enable vi style key bindings if preferred. For more info, see ```info bash``` section 8. Using emacs lingo, ```C-x``` is holding down the Ctrl key and pressing x, and ```M-x``` is holding down the Meta* key and pressing x. The Meta key is usually labelled ```Alt```, but can also be used by pressing and releasing ```Escape```. Sometimes ```Alt``` is not functioning correctly due to the terminal emulator. Yank means paste. Kill means cut.
+By default, the bash shell is in emacs-mode exposing some emacs key bindings for line editing. These bindings can be extended by creating and modifying a user's readline init file. Alternatively, this behavior can be switched to enable vi style key bindings if preferred. For more info, see ```info bash``` section 8. Using emacs lingo, ```C-x``` is holding down the Ctrl key and pressing x, and ```M-x``` is holding down the Meta* key and pressing x. The Meta key is usually labelled ```Alt```, but can also be used by pressing and releasing ```Escape```. Sometimes ```Alt``` may not functioni correctly due to the terminal emulator. Yank means paste. Kill means cut.
 
 Cancel:
 - ```C-g``` abort search
