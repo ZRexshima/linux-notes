@@ -62,7 +62,7 @@ Modifier:
 
 To edit a command in editor: ```^xe```
 
-How is this editor identified?
+_How is this editor identified?_
 
 ```C-\``` sends SIGKILL when ```C-c``` fails to end a program. 
 
